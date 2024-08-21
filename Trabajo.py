@@ -30,7 +30,7 @@ class Sistema:
     
     def IngresarPac(self):
         nombre = input("Ingrese el nombre: ")
-        cedula = input("Ingrese la cedula: ")
+        cedula = int(input("Ingrese la cedula: "))
         genero = input("Ingrese el genero ")
         servicio = input("Ingrese el servicio: ")
         
@@ -54,6 +54,8 @@ class Sistema:
                 print("Cedula:" + str(paciente.VerCedula()))
                 print("Genero:" + paciente.VerGenero())
                 print("Servicio:" + paciente.VerServicio())
+            else:
+                print("no existe el paciente")
 miSistema = Sistema()
 
 while True:
